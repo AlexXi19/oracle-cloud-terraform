@@ -51,12 +51,3 @@ data "oci_core_private_ips" "Private-IP-2" {
 resource "oci_core_ipv6" "IPv6-2" {
   vnic_id = data.oci_core_private_ips.Private-IP-2.private_ips[0].vnic_id
 }
-
-
-data "oci_core_private_ips" "Private-IP-3" {
-  ip_address = oci_core_instance.Instance-3.private_ip
-  subnet_id  = oci_core_subnet.Subnet-default.id
-}
-resource "oci_core_ipv6" "IPv6-3" {
-  vnic_id = data.oci_core_private_ips.Private-IP-3.private_ips[0].vnic_id
-}
