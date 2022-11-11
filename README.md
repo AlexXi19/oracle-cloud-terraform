@@ -17,6 +17,8 @@ Credits to [@Hiroshi](https://github.com/hi-usui)
 
 ## To use this
 
+Create an Oracle Cloud account. 
+
 Create your public keys in `~/.ssh` by running `TODO`.
 
 Follow [this guide](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/terraformproviderconfiguration.htm#APIKeyAuth) to find and create your credentials.
